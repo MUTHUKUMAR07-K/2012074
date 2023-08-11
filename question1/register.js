@@ -69,8 +69,6 @@ const data2=fetch('http://20.244.56.144/train/trains',option_auth2).then(res=>{
     const importData = async () => {
         try {
           await Train.create(data)
-          console.log('data successfully imported')
-
           process.exit()
         } catch (error) {
           console.log('error', error)
